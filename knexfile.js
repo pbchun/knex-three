@@ -4,7 +4,7 @@ module.exports = {
 
   development: {
     client: 'pg',
-    connection: 'postsql://localhost/knex-3'
+    connection: process.env.DATABASE_URL
   },
   production: {
     client: 'pg',
